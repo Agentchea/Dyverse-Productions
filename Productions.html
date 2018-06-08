@@ -5,23 +5,46 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="main.css" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){
+         $(".menu-icon").click(function(){
+             $(".menu-icon").toggleClass("active")
+        })
+        $(".menu-icon").click(function(){
+             $(".sidebar").toggleClass("active")
+        })
+     })
+</script>
+  <img src="cbh.jpg" class="cbh">
 </head>
-
 <body>
-  <header>
-   <div class="container">
-     <img src="logo.png"  alt="logo" class="logo"><a></a>
-     <nav>
-      <ul>
+  <div class="menu-icon">
+         <span></span>
+         <span></span>
+         <span></span>
+  </div>
+  <div class="sidebar">
+     <a href="#"><img src="logo2.png" class="logo2"></a>
+      <ul class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#">Commercials</a></li>
+        <li><a href="#">Kids Story Books</a></li>
+        <li><a href="#">Designers</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+      <ul class="social-icon">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+      </ul>
   </div>
-  </header>
 
 <script src="Script.js"></script>
 </body>
